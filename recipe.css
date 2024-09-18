@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+
+  font-family: "Outfit-light";
+  src: url("./assets/fonts/outfit/static/Outfit-Light.ttf") format("truetype");
+
+  font-family: "Outfit-semibold";
+  src: url("./assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+}
+@font-face {
+  font-family: "YoungSerif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Outfit-medium";
+  src: url("./assets/fonts/outfit/static/Outfit-Medium.ttf");
+}
+
+body {
+  background-color: hsla(32, 91%, 55%, 0.2);
+  font-family: "YoungSerif", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  display: 1 1 45%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .flex-item {
+    width: 100%;
+  }
+}
+.image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin: 2% auto;
+  margin-bottom: 0px;
+}
+
+h1 {
+  color: rgb(55, 55, 55);
+}
+.paragraph {
+  font-family: "Outfit-light";
+}
+.preparation-time {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  font-family: "Outfit-light";
+  font-size: 1rem;
+  line-height: 1.8rem;
+  background-color: rgba(241, 97, 217, 0.1);
+  padding: 15px 0px;
+  border-radius: 10px;
+  color: rgb(77, 77, 77);
+}
+
+h3 {
+  color: rgb(154, 31, 136);
+  font-family: "YoungSerif", sans-serif;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.bold {
+  font-family: "Outfit-semibold";
+}
+.ingredients {
+  font-family: "Outfit-light";
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: rgb(77, 77, 77);
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Outfit-semibold";
+  color: rgb(146, 86, 86);
+  padding-top: 10px;
+}
+.title {
+  font-family: "YoungSerif", sans-serif;
+}
+.instructions {
+  font-family: "Outfit-light";
+  font-size: 1rem;
+  color: rgb(77, 77, 77);
+  padding-bottom: 10px;
+}
+.nutrition {
+  font-family: "Outfit-light";
+  font-size: 1rem;
+  color: rgb(77, 77, 77);
+}
+
+ol {
+  list-style-position: outside; /* Places the numbers outside the list items */
+  padding-left: 40px; /* Optional: Adds space between the numbers and the text */
+}
+
+ol ::marker {
+  color: rgb(146, 86, 86); /* Changes the color of the numbers */
+  font-weight: bold; /* Optional: Makes the numbers bold */
+}
+
+ol li {
+  padding-left: 15px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.item :last-of-type {
+  height: 80px;
+  padding-bottom: 80px;
+}
+.nutrition-name {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  font-family: "Outfit-light";
+  color: rgb(77, 77, 77);
+  padding-left: 25px;
+}
+
+.nutrition-number {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  color: rgb(146, 86, 86);
+  font-family: "Outfit-medium";
+}
+.line {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(159, 103, 103, 0.2);
+  height: 1px;
+}
